@@ -1,0 +1,976 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+body {
+  margin: 0%;
+  padding: 0%;
+  /* Add image */
+  background-image: url("https://i.ibb.co/096TkyT/Daco-4965295-1.png");
+  /* Make image center */
+  background-position: center center;
+  /* Make image fixed */
+  background-attachment: fixed;
+  /* Not repeat images */
+  background-repeat: no-repeat;
+  /* Set background size auto */
+  background-size: auto;
+  background-color: #030303;
+  margin: 0%;
+}
+
+/* Media query for mobile devices  */
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url("https://i.ibb.co/096TkyT/Daco-4965295-1.png");
+  }
+}
+
+#yellow {
+  color: #f5bd1f;
+  font-size: 30px;
+}
+
+#App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.568);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 25px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 25px 25px 25px 25px;
+}
+
+#precipitation-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2.5%;
+}
+
+#precipitation-section #precipitation {
+  font-weight: 200;
+  margin: 0%;
+}
+
+#precipitation-section #precipitation-value {
+  margin: 0%;
+}
+
+#wind-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2.5%;
+}
+
+#wind-section #wind {
+  font-weight: 200;
+  margin: 0%;
+}
+
+#wind-section #wind-value {
+  margin: 0%;
+}
+
+#humidity-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2.5%;
+}
+
+#humidity-section #humidity {
+  font-weight: 200;
+  margin: 0%;
+}
+
+#humidity-section #humidity-value {
+  margin: 0%;
+}
+
+#pressure-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2.5%;
+}
+
+#pressure-section #pressure {
+  font-weight: 200;
+  margin: 0%;
+}
+
+#pressure-section #pressure-value {
+  margin: 0%;
+}
+
+#line-break-aqi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+  width: 200px;
+  background-color: #111111;
+  height: 1px;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+#Center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#top, #middle, #bottom {
+  margin: 1.5%;
+}
+
+#location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+  font-size: 50px;
+}
+
+#date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  font-weight: 200;
+  margin: 0%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 17.5px;
+}
+
+#middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+}
+
+#temperature-value {
+  margin: 0%;
+}
+
+#temperature-degree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  font-weight: 200;
+  margin: 0%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 85%;
+}
+
+#temperature-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  font-weight: 200;
+  margin: 0%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 25px;
+}
+
+#temperature-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+  font-size: 15px;
+}
+
+#weather-img, #temperature-value {
+  margin: 2.5% 10%;
+}
+
+#temperature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgba(12, 12, 12, 0.63);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 25px;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+#day-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 15px 25px 15px 25px;
+}
+
+#card-high-low {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0%;
+}
+
+.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 100;
+  margin: 0%;
+  font-size: 25px;
+}
+
+#card-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0px 0px 0px;
+}
+
+#right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 25px 25px 25px 25px;
+}
+
+#mumbai {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+  border-radius: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 150px;
+  width: 175px;
+}
+
+#name-of-state-mumbai {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+  font-weight: 400;
+}
+
+#remarks-state-mumbai {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+}
+
+#value-of-temperature-state-mumbai {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+}
+
+#remark-of-temperature-state-mumbai {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+  margin-left: 10%;
+  padding: 0%;
+  text-align: left;
+  font-size: 20px;
+}
+
+#kolkata {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+  border-radius: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 150px;
+  width: 175px;
+}
+
+#name-of-state-kolkata {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+  font-weight: 400;
+}
+
+#remarks-state-kolkata {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+}
+
+#value-of-temperature-state-kolkata {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+}
+
+#remark-of-temperature-state-kolkata {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+  margin-left: 10%;
+  padding: 0%;
+  text-align: left;
+  font-size: 20px;
+}
+
+#bangalore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+  border-radius: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 150px;
+  width: 175px;
+}
+
+#name-of-state-bangalore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+  font-weight: 400;
+}
+
+#remarks-state-bangalore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+}
+
+#value-of-temperature-state-bangalore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+}
+
+#remark-of-temperature-state-bangalore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+  margin-left: 10%;
+  padding: 0%;
+  text-align: left;
+  font-size: 20px;
+}
+
+#line-break-states {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+  width: 200px;
+  background-color: #111111;
+  height: 1px;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    margin: 0%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    align-items: center;
+    justify-content: center;
+  }
+  #App {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.719);
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px 0px 0px 0px;
+    background-repeat: space;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0%;
+    padding: 0%;
+  }
+  #middle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #temperature-degree {
+    font-size: 75px;
+  }
+  #temperature-comment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-weight: 200;
+    margin: 0%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 20px;
+  }
+  #temperature-time {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-weight: 200;
+    margin: 0%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 10px;
+  }
+  #bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #temperature {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 40vh;
+    width: 80vw;
+    background: rgba(12, 12, 12, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 25px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    margin: 0px 50px 0px 50px;
+  }
+  #Center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #right {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #left {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    margin: 0%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background: rgba(12, 12, 12, 0.63);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 25px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 25px 25px 25px 25px;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    margin-top: 2.5%;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  #air-quality {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #line-break-states {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    margin: 0%;
+    width: 1px;
+    background-color: #111111;
+    height: 200px;
+    margin: 5%;
+  }
+  #right {
+    background: rgba(12, 12, 12, 0.63);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 25px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    margin-top: 2.5%;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  #states {
+    margin: 0%;
+    padding: 0%;
+  }
+  #line-break-aqi {
+    display: hidden;
+    width: 0px;
+    height: 0px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  body {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/fluent/48/000000/partly-cloudy-day.png" type="image/x-icon">
+    <title>Weather</title>
+  </head>
+  <body>
+    <div>
+      <div  id='App'>
+      <div id='left'>
+        <div id='precipitation-section'>
+        <h1 id='precipitation'>Visisbility</h1>
+        <h1 id='precipitation-value'>3500</h1>
+        </div>
+        <div id='line-break-aqi'></div>
+        <div id='wind-section'>
+        <h1 id='wind'>Wind</h1>
+        <h1 id='wind-value'>10 km/h</h1>
+        </div>
+        <div id='line-break-aqi'></div>
+        <div id='humidity-section'>
+        <h1 id='humidity'>Humidity</h1>
+        <h1 id='humidity-value'>0%</h1>
+        </div>
+        <div id='line-break-aqi'></div>
+        <div id='pressure-section'>
+        <h1 id='pressure'>Pressure</h1>
+        <h1 id='pressure-value'>840hPa</h1>
+      </div>
+        </div>
+        <div id='center'>
+          <div id='top'>
+          <h1 id='location'><strong>INDIA</strong>,New Delhi</h1>
+          <h1 id='date'>21,July 2021</h1>
+          </div>
+          <div id='middle'>
+          <img alt='weather' src="https://img.icons8.com/fluent/150/000000/chance-of-storm.png" id='weather-img'/>
+          <h1 id='temperature-value'>
+          <strong id='temperature-degree'><div id='delhiTemp'>30</div><span id='yellow'>°</span>C</strong>
+          <div id='temperature-comment'>Thunderstorm</div>
+          <div id='temperature-time'>1:48</div>
+          </h1>
+          </div>
+          <div id='bottom'>
+          <div id='temperature'>
+            <div id='day-card'>
+              <h1 class="text" id='time-nineM'>09:00</h1>
+              <div id='card-high-low'>
+              <h1 class="text"><div id='high-nineM'></div><span id='yellow'>°</span>C</h1>
+              <h1 class="text" id='slash'>/</h1>
+              <h1 class="text"><div id='low-nineM'></div><span id='yellow'>°</span>C</h1>
+              </div>
+              <div id='card-img'>
+              <img alt='weather icon' id='img-nineM' src='https://img.icons8.com/fluent/75/000000/torrential-rain.png'></img>
+              </div>
+            </div>
+            <div id='day-card'>
+              <h1 class="text" id='time-twelveM'>12:00</h1>
+              <div id='card-high-low'>
+              <h1 class="text"><div id='high-twelveM'></div><span id='yellow'>°</span>C</h1>
+              <h1 class="text" id='slash'>/</h1>
+              <h1 class="text"><div id='low-twelveM'></div><span id='yellow'>°</span>C</h1>
+              </div>
+              <div id='card-img'>
+              <img alt='weather icon' id='img-twelveM' src='https://img.icons8.com/fluent/75/000000/torrential-rain.png'></img>
+              </div>
+            </div>
+            <div id='day-card'>
+              <h1 class="text" id='time-three'>15:00</h1>
+              <div id='card-high-low'>
+              <h1 class="text"><div id='high-three'></div><span id='yellow'>°</span>C</h1>
+              <h1 class="text" id='slash'>/</h1>
+              <h1 class="text"><div id='low-three'></div><span id='yellow'>°</span>C</h1>
+              </div>
+              <div id='card-img'>
+              <img alt='weather icon' id='img-three' src='https://img.icons8.com/fluent/75/000000/torrential-rain.png'></img>
+              </div>
+            </div>
+            <div id='day-card'>
+              <h1 class="text" id='time-six'>18:00</h1>
+              <div id='card-high-low'>
+              <h1 class="text"><div id='high-six'></div><span id='yellow'>°</span>C</h1>
+              <h1 class="text" id='slash'>/</h1>
+              <h1 class="text"><div id='low-six'></div><span id='yellow'>°</span>C</h1>
+              </div>
+              <div id='card-img'>
+              <img alt='weather icon' id='img-six' src='https://img.icons8.com/fluent/75/000000/torrential-rain.png'></img>
+              </div>
+            </div>
+            <div id='day-card'>
+              <h1 class="text" id='time-nineN'>21:00</h1>
+              <div id='card-high-low'>
+              <h1 class="text"><div id='high-nineN'></div><span id='yellow'>°</span>C</h1>
+              <h1 class="text" id='slash'>/</h1>
+              <h1 class="text"><div id='low-nineN'></div><span id='yellow'>°</span>C</h1>
+              </div>
+              <div id='card-img'>
+              <img alt='weather icon' id='img-nineN' src='https://img.icons8.com/fluent/75/000000/torrential-rain.png'></img>
+              </div>
+            </div>
+            <div id='day-card'>
+              <h1 class="text" id='time-twelveN'>00:00</h1>
+              <div id='card-high-low'>
+              <h1 class="text"><div id='high-twelveN'></div><span id='yellow'>°</span>C</h1>
+              <h1 class="text" id='slash'>/</h1>
+              <h1 class="text"><div id='low-twelveN'></div><span id='yellow'>°</span>C</h1>
+              </div>
+              <div id='card-img'>
+              <img alt='weather icon' id='img-twelveN' src='https://img.icons8.com/fluent/75/000000/torrential-rain.png'></img>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div id='right'>
+        <div id='kolkata'>
+          <h1 id='name-of-state-kolkata'>Kolkata</h1>
+          <img src='https://img.icons8.com/fluent/48/000000/sleet.png' id='image-of-weather-kolkata'></img>
+          <div id='remarks-state-kolkata'>
+            <h1><div id='value-of-temperature-state-kolkata'></div></h1>
+            <span id='yellow'>°</span>
+            <h1>C</h1>
+            <h1 id='remark-of-temperature-state-kolkata'>Mist</h1>
+          </div>
+          </div>
+        <div id='line-break-states'></div>
+        <div id='bangalore'>
+          <h1 id='name-of-state-bangalore'>Bangalore</h1>
+          <img src='https://img.icons8.com/fluent/48/000000/sleet.png' id='image-of-weather-bangalore'></img>
+          <div id='remarks-state-bangalore'>
+            <h1><div id='value-of-temperature-state-bangalore'></div></h1>
+            <span id='yellow'>°</span>
+            <h1>C</h1>
+            <h1 id='remark-of-temperature-state-bangalore'>Mist</h1>
+          </div>
+          </div>
+          <div id='line-break-states'></div>
+          <div id='mumbai'>
+            <h1 id='name-of-state-mumbai'>Mumbai</h1>
+            <img src='https://img.icons8.com/fluent/48/000000/sleet.png' id='image-of-weather-mumbai'></img>
+            <div id='remarks-state-mumbai'>
+              <h1><div id='value-of-temperature-state-mumbai'></div></h1>
+              <span id='yellow'>°</span>
+              <h1>C</h1>
+              <h1 id='remark-of-temperature-state-mumbai'>Mist</h1>
+            </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    <script src='./script.js'></script>
+  </body>
+</html>

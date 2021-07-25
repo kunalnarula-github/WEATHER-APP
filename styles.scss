@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+// Variables and Mixins
+
+$white : white;
+$blackcard : rgba(12, 12, 12, 0.63);
+
+@mixin basic-flex(){
+    display: flex;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: $white;
+    font-weight: 200;
+    margin: 0%;
+    justify-content: center;
+}
+
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  margin: 0%;
+}
+
+// BODY
+
+body {
+    margin: 0%;
+    padding: 0%;
+    /* Add image */
+    background-image: url(
+        "https://i.ibb.co/096TkyT/Daco-4965295-1.png");
+    /* Make image center */
+    background-position: center center;
+
+    /* Make image fixed */
+    background-attachment: fixed;
+
+    /* Not repeat images */
+    background-repeat: no-repeat;
+
+    /* Set background size auto */
+    background-size: auto;
+
+    background-color: rgb(3, 3, 3);
+    margin: 0%;
+  }
+
+  /* Media query for mobile devices  */
+  @media only screen and (max-width: 767px) {
+    body {
+      background-image: url(
+"https://i.ibb.co/096TkyT/Daco-4965295-1.png");   }
+  }
+
+  #yellow{
+    color: #f5bd1f;
+    font-size: 30px;
+  }
+
+  // APP LAYOUT - APP (FLEX) HAS BEEN DIVIDED HORIZONTALLY INTO 3 PARTS LEFT, RIGHT AND CENTER
+
+  #App{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.568);
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  // LEFT PART LAYOUT OF THE APP
+
+  #left{
+    @include center();
+    justify-content: space-evenly;
+    flex-direction: column;
+    // background: $blackcard;
+    // backdrop-filter: blur( 4.0px );
+    // -webkit-backdrop-filter: blur( 4.0px );
+    border-radius: 25px;
+    height: max-content;
+    width: max-content;
+    padding: 25px 25px 25px 25px;
+  }
+
+  // OTHER PARAMETERS DISPLAYED ON THE LEFT
+
+  #precipitation-section{
+    @include center();
+    flex-direction: column;
+    margin:2.5%;
+    #precipitation{
+      font-weight: 200;
+      margin: 0%
+    }
+    #precipitation-value{
+      margin: 0%
+    }
+  }
+
+  #wind-section{
+    @include center();
+    flex-direction: column;
+    margin:2.5%;
+    #wind{
+      font-weight: 200;
+      margin: 0%
+    }
+    #wind-value{
+      margin: 0%
+    }
+  }
+
+  #humidity-section{
+    @include center();
+    flex-direction: column;
+    margin:2.5%;
+    #humidity{
+      font-weight: 200;
+      margin: 0%
+    }
+    #humidity-value{
+      margin: 0%
+    }
+  }
+
+  #pressure-section{
+    @include center();
+    flex-direction: column;
+    margin:2.5%;
+    #pressure{
+      font-weight: 200;
+      margin: 0%
+    }
+    #pressure-value{
+      margin: 0%
+    }
+  }
+
+  // LINE BREAK BETWEEN LEFT PARAMETERS
+
+  #line-break-aqi{
+    @include center();
+    width: 200px;
+    background-color: rgb(17, 17, 17);
+    height: 1px;
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+  // CENTER PART LAYOUT OF THE APP
+  // CENTER PART (FLEX) HAS BEEN FURTHER DIVIDED INTO VERTICAL THREE PARTS - TOP, MIDDLE AND BOTTOM
+
+  #Center{
+    display: flex;
+  } 
+
+  // TOP PART - CENTER
+
+  #top,#middle,#bottom{
+      margin: 1.5%
+  }
+
+  // LOCATION DISPLAYED
+
+  #location{
+    @include center();
+    font-size: 50px
+  }
+
+  // DATE DISPLAYED
+
+  #date{
+    @include basic-flex();
+    font-size: 17.5px;
+  }
+
+  // MIDDLE PART - CENTER
+
+  #middle{
+    @include center();
+  }
+
+  // TEMPERATURE VALUE
+
+  // PARENT DIV OF WHOLE TEMPERATURE DISPLAY
+
+  #temperature-value{
+    margin: 0%
+  }
+
+  // TEMPERATURE DISPLAYED IN DEGREE
+
+  #temperature-degree{
+    @include basic-flex();
+    font-weight:bold;
+    font-size: 100px;
+    line-height: 85%;
+  }
+  
+  // COMMENT ON TEMPERATURE
+
+  #temperature-comment{
+    @include basic-flex();
+    font-size: 25px;
+  }
+
+  // TIME ON TEMPERATURE
+
+  #temperature-time{
+      @include center();
+      font-size: 15px;
+  }
+
+  // MARGINS ON 
+
+  #weather-img,#temperature-value{
+      margin: 2.5% 10%;
+  }
+
+  // BOTTOM PART - CENTER
+
+  // GLASS BACKGROUND
+
+  #temperature{
+    display: flex;
+    background:  $blackcard;
+    backdrop-filter: blur( 4.0px );
+    -webkit-backdrop-filter: blur( 4.0px );
+    border-radius: 25px;
+    flex-flow:  wrap;
+    justify-content: space-evenly;
+    height: max-content;
+  }
+
+  // FUTURE DAYS FORECAST CARD
+
+  #day-card{
+    @include center();
+    flex-direction: column;
+    margin: 15px 25px 15px 25px;
+  }
+
+  // LOW-HIGH ON DAY CARD
+
+  #card-high-low{
+      display: flex;
+      flex-direction: row;
+      margin: 0%;
+  }
+
+  .text{
+      display: flex;
+      font-weight: 100;
+      margin: 0%;
+      font-size: 25px;
+  }
+
+  // IMAGE ON DAY CARD
+
+  #card-img{
+    display: flex;
+      margin: 10px 0px 0px 0px;
+  }
+
+  // RIGHT PART LAYOUT OF THE APP
+
+  #right{
+    @include center();
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 25px 25px 25px 25px;
+  }
+
+  // STATES DISPLAYED AT THE RIGHT
+
+   @mixin states(){
+    @include center();
+    // background:  $blackcard;
+    // backdrop-filter: blur( 4.0px );
+    // -webkit-backdrop-filter: blur( 4.0px );
+    border-radius: 25px;
+    flex-direction: column;
+    height: 150px;
+    width: 175px;
+  }
+
+  @mixin name-of-state(){
+    @include center();
+    font-weight: 400;
+  }
+  
+  @mixin remarks-state(){
+    @include center();
+  }
+
+  @mixin value-of-temperature-state(){
+    @include center();
+  }
+
+  @mixin remark-of-temperature-state(){
+    @include center();
+    margin-left:10%;
+    padding: 0%;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  // MUMBAI
+
+  #mumbai{
+    @include states();
+  }
+
+  #name-of-state-mumbai{
+    @include name-of-state();
+  }
+
+  #remarks-state-mumbai{
+    @include remarks-state();
+  }
+
+  #value-of-temperature-state-mumbai{
+    @include value-of-temperature-state();
+  }
+
+  #remark-of-temperature-state-mumbai{
+    @include remark-of-temperature-state();
+  }
+
+  // KOLKATA
+  #kolkata{
+    @include states();
+  }
+
+  #name-of-state-kolkata{
+    @include name-of-state();
+  }
+
+  #remarks-state-kolkata{
+    @include remarks-state();
+  }
+
+  #value-of-temperature-state-kolkata{
+    @include value-of-temperature-state();
+  }
+
+  #remark-of-temperature-state-kolkata{
+    @include remark-of-temperature-state();
+  }
+
+  // BANGALORE
+  #bangalore{
+    @include states();
+  }
+
+  #name-of-state-bangalore{
+    @include name-of-state();
+  }
+
+  #remarks-state-bangalore{
+    @include remarks-state();
+  }
+
+  #value-of-temperature-state-bangalore{
+    @include value-of-temperature-state();
+  }
+
+  #remark-of-temperature-state-bangalore{
+    @include remark-of-temperature-state();
+  }
+
+
+  // LINE BREAK BETWEEN STATES DISPLAYED AT RIGHT
+
+  #line-break-states{
+    @include center();
+    width: 200px;
+    background-color: rgb(17, 17, 17);
+    height: 1px;
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+
+
+  // FOR MOBILE DEVICES
+
+  @media only screen and (max-width: 900px) {
+
+    body{
+      @include center();
+      width: max-content;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #App {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.719);
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 0px 0px 0px;
+        background-repeat: space;
+        height: max-content;
+        width: max-content;
+        margin: 0%;
+        padding: 0%;
+    }
+    #middle{
+        flex-direction: column;
+    }
+
+    #temperature-degree{
+        font-size: 75px
+    }
+
+    #temperature-comment{
+        @include basic-flex();
+        font-size: 20px;
+      }
+    
+      #temperature-time{
+          @include basic-flex();
+          font-size: 10px;
+      }
+      
+      #bottom{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      #temperature{
+        display: flex;
+        justify-content: center;
+      height: 40vh;
+      width: 80vw;
+      background: rgba(12, 12, 12, 0.7);
+      backdrop-filter: blur( 8.0px );
+      -webkit-backdrop-filter: blur( 4.0px );
+      border-radius: 25px;
+      flex-direction: column;
+      flex-flow:  wrap;
+      height: max-content;
+      margin: 0px 50px 0px 50px;
+    }
+
+    #Center{
+      display: flex;
+      order: 1;
+    }
+
+    #right{
+      order: 3;
+      flex-direction: row;
+    }
+
+    #left{
+      order: 2;
+      @include center();
+      justify-content: space-evenly;
+      flex-direction: row;
+      background: $blackcard;
+      backdrop-filter: blur( 4.0px );
+      -webkit-backdrop-filter: blur( 4.0px );
+      border-radius: 25px;
+      height: max-content;
+      padding: 25px 25px 25px 25px;
+      flex-flow: wrap;
+      margin-top: 2.5%;
+      margin-left: 6px;
+      margin-right: 6px;
+    }
+
+    #air-quality{
+      flex-direction: row
+    }
+
+    #line-break-states{
+      @include center();
+      width: 1px;
+      background-color: rgb(17, 17, 17);
+      height: 200px;
+      margin: 5%;
+    }
+
+    #right{
+      background: $blackcard;
+      backdrop-filter: blur( 4.0px );
+      -webkit-backdrop-filter: blur( 4.0px );
+      border-radius: 25px;
+      height: max-content;
+      margin-top: 2.5%;
+      margin-left: 6px;
+      margin-right: 6px;
+    }
+
+    #states{
+      margin: 0%;
+      padding: 0%;
+    }
+
+    #line-break-aqi{
+      display: hidden;
+      width: 0px;
+      height: 0px;
+    }
+  }
+
+  @media only screen and (max-width: 350px){
+      body{
+          display: none;
+      }
+  }
